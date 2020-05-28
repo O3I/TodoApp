@@ -8,7 +8,7 @@ import info.srs.acheamponglord.todoapp.dao.TodoDao
 import info.srs.acheamponglord.todoapp.models.Todo
 
 @Database(entities = [Todo::class], version = 1, exportSchema = false)
- abstract class TodoDatabase: RoomDatabase() {
+abstract class TodoDatabase : RoomDatabase() {
     abstract fun todoDao(): TodoDao
 
     companion object {
@@ -21,8 +21,10 @@ import info.srs.acheamponglord.todoapp.models.Todo
                 return tempInstance
             }
             synchronized(this) {
-                val instance  = Room.databaseBuilder(context.applicationContext,
-                    TodoDatabase::class.java,"todo")
+                val instance = Room.databaseBuilder(
+                    context.applicationContext,
+                    TodoDatabase::class.java, "todo"
+                )
                     .build()
                 INSTANCE = instance
                 return instance
