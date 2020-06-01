@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">TodoApp</string>
+    <string name="name_of_task">Name of Task</string>
+    <string name="description">Description</string>
+    <string name="btn_add_new">Add New Todo</string>
 </resources>
