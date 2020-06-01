@@ -32,8 +32,10 @@ class TodoListActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == todoRequestCode && resultCode == Activity.RESULT_OK) {
-
-
+            val name = data?.getStringExtra(AddTodoActivity.EXTRA_NAME)
+            val description = data?.getStringExtra(AddTodoActivity.EXTRA_DESCRIPTION)
+            val todo = name?.let { Todo(0, it, description, false) }
+            todo?.let { todoViewModel.insert(todo) }
         }
     }
 
