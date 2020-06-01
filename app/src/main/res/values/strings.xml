@@ -3,4 +3,5 @@
     <string name="name_of_task">Name of Task</string>
     <string name="description">Description</string>
     <string name="btn_add_new">Add New Todo</string>
+    <string name="empty_todo_name">Todo name cannot be empty</string>
 </resources>
