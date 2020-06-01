@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import info.srs.acheamponglord.todoapp.databinding.ActivityMainBinding
+import info.srs.acheamponglord.todoapp.models.Todo
 import info.srs.acheamponglord.todoapp.viewmodels.TodoViewModel
 
 class TodoListActivity : AppCompatActivity() {
@@ -32,7 +33,6 @@ class TodoListActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == todoRequestCode && resultCode == Activity.RESULT_OK) {
 
-        } else {
 
         }
     }
