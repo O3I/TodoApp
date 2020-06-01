@@ -23,5 +23,7 @@ class TodoUnitTest {
         )
         assertEquals(todo.uid, 1)
         assertEquals(todo.isCompleted, false)
+        assertEquals(todo.name, "Go to the grocery store")
     }
+
 }
