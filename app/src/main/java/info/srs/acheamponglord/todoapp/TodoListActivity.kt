@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import info.srs.acheamponglord.todoapp.databinding.ActivityMainBinding
+import info.srs.acheamponglord.todoapp.databinding.ActivityMainBindingImpl
 import info.srs.acheamponglord.todoapp.models.Todo
 import info.srs.acheamponglord.todoapp.viewmodels.TodoViewModel
 
